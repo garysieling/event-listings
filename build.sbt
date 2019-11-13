@@ -19,3 +19,10 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3
 libraryDependencies ++= Seq(
   "com.typesafe.slick" %% "slick" % "3.3.2"
 )
+
+val enumeratumVersion = "1.5.13"
+
+libraryDependencies ++= Seq(
+    "com.beachape" %% "enumeratum" % enumeratumVersion
+)
+
