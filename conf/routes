@@ -8,3 +8,28 @@ GET     /                           controllers.HomeController.index
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+GET     /events                     controllers.EventController.events
+GET     /events/upcoming            controllers.EventController.upcoming
+GET     /events/near                controllers.EventController.near
+GET     /events/notifyAttendees     controllers.EventController.notifyAttendees
+GET     /events/create              controllers.EventController.create
+GET     /events/update              controllers.EventController.update
+GET     /events/rsvp                controllers.EventController.rsvp
+GET     /events/unsvp               controllers.EventController.rsvp
+GET     /events/messages            controllers.EventController.messages
+GET     /events/message             controllers.EventController.message
+
+GET     /groups                     controllers.GroupController.groups
+GET     /groups/notifyMembers       controllers.GroupController.notifyMembers
+GET     /groups/create              controllers.GroupController.create
+GET     /groups/update              controllers.GroupController.update
+GET     /groups/join                controllers.GroupController.join
+GET     /groups/leave               controllers.GroupController.leave
+GET     /groups/messages            controllers.GroupController.messages
+GET     /groups/message             controllers.GroupController.message
+
+GET     /users/view                 controllers.UserController.view
+GET     /users/create               controllers.UserController.create
+GET     /users/history              controllers.UserController.history
+GET     /users/update               controllers.UserController.update

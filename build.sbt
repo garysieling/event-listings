@@ -15,3 +15,7 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3
 
 // Adds additional packages into conf/routes
 // play.sbt.routes.RoutesKeys.routesImport += "com.com.garysielincom.garysieling.binders._"
+
+libraryDependencies ++= Seq(
+  "com.typesafe.slick" %% "slick" % "3.3.2"
+)
